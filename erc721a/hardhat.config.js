@@ -24,14 +24,14 @@ const ETHERSCAN_API_KEY         = process.env.ETHERSCAN_API_KEY;
 } 
 */
 
-////////// Configuration of the contract on Rinkeby/ Mainnet //////////
+////////// Configuration of the contract on Goerli //////////
 
 module.exports = {
    solidity: "0.8.4",
-   defaultNetwork: "kovan",
+   defaultNetwork: "goerli",
    networks: {
       hardhat: {},
-      kovan: {
+      goerli: {
          url: API_URL,
          accounts: [`0x${PRIVATE_KEY}`]
       }
